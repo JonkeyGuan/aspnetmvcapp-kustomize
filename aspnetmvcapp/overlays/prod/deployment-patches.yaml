@@ -1,0 +1,10 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aspnetmvcapp
+spec:
+  template:
+    spec:
+      containers:
+      - name: aspnetmvcapp
+        image: registry.jonkey.cc:5000/aspnetmvcapp-prod/aspnetmvcapp:v1
